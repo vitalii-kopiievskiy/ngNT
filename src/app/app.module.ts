@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { SliderComponent } from './slider/slider.component';
+import { FirstWidgetComponent } from './first-widget/first-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    SliderComponent
+    SliderComponent,
+    FirstWidgetComponent
   ],
   imports: [
     BrowserModule
