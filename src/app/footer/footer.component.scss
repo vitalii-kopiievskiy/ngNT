@@ -1,0 +1,19 @@
+.copyright {
+  background-color: black;
+
+  &__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #adadad;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    @media screen and (max-width: 575px) {
+      text-align: left;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

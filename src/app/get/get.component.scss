@@ -1,0 +1,33 @@
+.get {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 100px;
+  }
+
+  &__buttons {
+    margin-top: 54px;
+    padding-bottom: 150px;
+  }
+  &-mobile__buttons {
+    margin-top: 53px;
+    padding-bottom: 100px;
+  }
+
+  &-mobile__btn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    font-size: 29px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+    text-align: center;
+
+    &:hover {
+      transition: all 0.3s linear;
+      color: #0dc78f;
+      border: 1px solid #0dc78f;
+    }
+  }
+}
