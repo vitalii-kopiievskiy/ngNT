@@ -4,9 +4,19 @@
       <div class="row justify-content-between">
         <div class="col-12 d-block d-md-none">
           <div class="burger__menu">
-            <input id="checkbox" type="checkbox" />
-            <label class="burger__button" for="checkbox"><span></span></label>
-            <ul class="burger__list">
+            <div class="burger__button" (click)="visible = !visible">
+              <img
+                src="assets/images/header/burger.svg"
+                *ngIf="visible"
+                alt="burger button"
+              />
+              <img
+                src="assets/images/header/close.svg"
+                *ngIf="!visible"
+                alt="close button"
+              />
+            </div>
+            <ul class="burger__list" *ngIf="!visible">
               <li class="burger__logo">
                 <a
                   class="d-flex justify-content-center"
@@ -18,19 +28,28 @@
                 /></a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="javascript:void(0)"
+                <a
+                  class="burger__link"
+                  (click)="visible = !visible"
+                  href="javascript:void(0)"
                   >Lorem ipsum</a
                 >
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="javascript:void(0)"
+                <a
+                  class="burger__link"
+                  (click)="visible = !visible"
+                  href="javascript:void(0)"
                   >Lorem ipsum</a
                 >
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="javascript:void(0)"
-                  >Lorem ipsum
-                </a>
+                <a
+                  class="burger__link"
+                  (click)="visible = !visible"
+                  href="javascript:void(0)"
+                  >Lorem ipsum</a
+                >
               </li>
             </ul>
           </div>
@@ -42,7 +61,7 @@
                 class="nav__img d-none d-md-block"
                 src="assets/images/nav/logo.svg"
                 alt="logo"/><img
-                class="nav__img d-block d-md-none"
+                class="nav-mobile__img d-block d-md-none"
                 src="assets/images/nav/mobile_logo.svg"
                 alt="mobile logo"
             /></a>
