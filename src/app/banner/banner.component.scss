@@ -1,5 +1,5 @@
 .banner {
-  // background: url("assetsimages/header/header.png") 50% 0% no-repeat;
+  background: url("/assets/images/header/header.png") 50% 0% no-repeat;
 
   @media screen and (max-width: 767px) {
     padding-bottom: 100px;
@@ -70,7 +70,7 @@
   }
   &__buttons {
     margin-top: 27px;
-    padding-bottom: 291px;
+    padding-bottom: 289px;
   }
 
   &__btn:nth-child(1) {

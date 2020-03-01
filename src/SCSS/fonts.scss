@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500&display=swap");
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("/assets/fonts/Proxima Nova Bold"),
+    ("/assets/fonts/ProximaNova-Bold"),
+    url("/assets/fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/ProximaNova-Bold.woff") format("woff"),
+    url("/assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
