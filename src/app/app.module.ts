@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { SliderComponent } from './slider/slider.component';
 import { FirstWidgetComponent } from './first-widget/first-widget.component';
+import { SecondWidgetComponent } from './second-widget/second-widget.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FirstWidgetComponent } from './first-widget/first-widget.component';
     HeaderComponent,
     BannerComponent,
     SliderComponent,
-    FirstWidgetComponent
+    FirstWidgetComponent,
+    SecondWidgetComponent
   ],
   imports: [
     BrowserModule
