@@ -11568,7 +11568,7 @@ body {
   text-decoration: none;
 }
 .banner {
-  background: url("/assets/images/banner/banner.png") 50% 0% no-repeat;
+  background: url("assets/images/banner/banner.png") 50% 0% no-repeat;
 }
 @media screen and (max-width: 767px) {
   .banner {
