@@ -7,11 +7,20 @@
         </div>
         <div class="col-12 col-md-7">
           <div class="slider__block">
-            <div class="slider__content mx-auto d-flex flex-column justify-content-center align-items-start pl-5">
-              <p class="slider__desc">Nibh nisl</p>
-              <p class="slider__txt">
-                 Condimentum id venenatis a condimentum vitae sapien<br/>pellentesque. At tellus at urna condimentum mattis pellentesque id nibh tortor.</p>
-            </div>
+            <owl-carousel
+              [options]="carouselOptions"
+              [items]="items"
+              [carouselClasses]="['owl-theme', 'row', 'sliding']"
+            >
+              <div class="item" *ngFor="let i of items">
+                <div class="slide-text">
+                  <p class="slider__desc">{{ i.desc }}</p>
+                  <p class="slider__txt">
+                    {{ i.txt }}
+                  </p>
+                </div>
+              </div>
+            </owl-carousel>
           </div>
         </div>
       </div>

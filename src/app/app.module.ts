@@ -10,6 +10,7 @@ import { SecondWidgetComponent } from "./second-widget/second-widget.component";
 import { SetComponent } from "./set/set.component";
 import { GetComponent } from "./get/get.component";
 import { FooterComponent } from "./footer/footer.component";
+import { OwlModule } from "ngx-owl-carousel";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FooterComponent } from "./footer/footer.component";
     GetComponent,
     FooterComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, OwlModule],
   providers: [],
   bootstrap: [AppComponent]
 })
