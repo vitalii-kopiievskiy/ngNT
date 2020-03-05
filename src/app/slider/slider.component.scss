@@ -75,6 +75,11 @@
 
   @media screen and (max-width: 575px) {
     background-color: transparent;
+    margin-top: -45px;
+  }
+
+  @media screen and (max-width: 325px) {
+    background-color: transparent;
     margin-top: -87px;
   }
 }
