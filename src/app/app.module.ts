@@ -11,6 +11,7 @@ import { SetComponent } from "./set/set.component";
 import { GetComponent } from "./get/get.component";
 import { FooterComponent } from "./footer/footer.component";
 import { NgxUsefulSwiperModule } from "ngx-useful-swiper";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { NgxUsefulSwiperModule } from "ngx-useful-swiper";
     GetComponent,
     FooterComponent
   ],
-  imports: [BrowserModule, NgxUsefulSwiperModule],
+  imports: [BrowserModule, NgxUsefulSwiperModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

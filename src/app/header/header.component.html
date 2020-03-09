@@ -4,19 +4,21 @@
       <div class="row justify-content-between">
         <div class="col-12 d-block d-md-none">
           <div class="burger__menu">
-            <div class="burger__button" (click)="visible = !visible">
-              <img
-                src="assets/images/header/burger.svg"
-                *ngIf="visible"
-                alt="burger button"
-              />
-              <img
-                src="assets/images/header/close.svg"
-                *ngIf="!visible"
-                alt="close button"
-              />
+            <div
+              class="burger__button"
+              [@burger]="endBurger"
+              (click)="animate()"
+            >
+              <img src="assets/images/header/burger.svg" alt="burger button" />
             </div>
-            <ul class="burger__list" *ngIf="!visible">
+            <div
+              class="burger__button"
+              [@burger]="startBurger"
+              (click)="animate()"
+            >
+              <img src="assets/images/header/close.svg" alt="close button" />
+            </div>
+            <ul class="burger__list" [@burger]="startBurger">
               <li class="burger__logo">
                 <a
                   class="d-flex justify-content-center"
@@ -30,7 +32,7 @@
               <li class="burger__item">
                 <a
                   class="burger__link"
-                  (click)="visible = !visible"
+                  (click)="animate()"
                   href="javascript:void(0)"
                   >Lorem ipsum</a
                 >
@@ -38,7 +40,7 @@
               <li class="burger__item">
                 <a
                   class="burger__link"
-                  (click)="visible = !visible"
+                  (click)="animate()"
                   href="javascript:void(0)"
                   >Lorem ipsum</a
                 >
@@ -46,7 +48,7 @@
               <li class="burger__item">
                 <a
                   class="burger__link"
-                  (click)="visible = !visible"
+                  (click)="animate()"
                   href="javascript:void(0)"
                   >Lorem ipsum</a
                 >
